@@ -1,0 +1,161 @@
+{
+  "id": "middle-age",
+  "title": "Moyen Age",
+  "start_date": "476",
+  "end_date": "1453",
+  "children": [
+    {
+      "id": "centuries",
+      "children": [
+        {
+          "id": "centuries-5",
+          "title": "V",
+          "start_date": "476",
+          "end_date": "499"
+        },
+        {
+          "id": "centuries-6",
+          "title": "VI",
+          "start_date": "500",
+          "end_date": "599"
+        },
+        {
+          "id": "centuries-7",
+          "title": "VII",
+          "start_date": "600",
+          "end_date": "699"
+        },
+        {
+          "id": "centuries-8",
+          "title": "VIII",
+          "start_date": "700",
+          "end_date": "799"
+        },
+        {
+          "id": "centuries-9",
+          "title": "IX",
+          "start_date": "800",
+          "end_date": "899"
+        },
+        {
+          "id": "centuries-10",
+          "title": "X",
+          "start_date": "900",
+          "end_date": "999"
+        },
+        {
+          "id": "centuries-11",
+          "title": "XI",
+          "start_date": "1000",
+          "end_date": "1099"
+        },
+        {
+          "id": "centuries-12",
+          "title": "XII",
+          "start_date": "1100",
+          "end_date": "1199"
+        },
+        {
+          "id": "centuries-13",
+          "title": "XIII",
+          "start_date": "1200",
+          "end_date": "1299"
+        },
+        {
+          "id": "centuries-14",
+          "title": "XIV",
+          "start_date": "1300",
+          "end_date": "1399"
+        },
+        {
+          "id": "centuries-15",
+          "title": "XV",
+          "start_date": "1400",
+          "end_date": "1499"
+        }
+      ]
+    },
+    {
+      "id": "france",
+      "title": "France",
+      "children": [
+        {
+          "id": "france-kings",
+          "title": "Rois (dates des règnes)",
+          "url": "https://fr.wikipedia.org/wiki/Liste_des_monarques_de_France",
+          "children": [
+            {
+              "id": "france-kings-merovingians",
+              "title": "Mérovingiens",
+              "url": "https://fr.wikipedia.org/wiki/M%C3%A9rovingiens",
+              "start_date": "457",
+              "end_date": "751",
+              "children": [
+                {
+                  "title": "Clovis Ier",
+                  "url": "https://fr.wikipedia.org/wiki/Clovis_Ier",
+                  "description": "roi des Francs",
+                  "start_date": "481",
+                  "end_date": "511"
+                }
+              ]
+            },
+            {
+              "id":"france-kings-carolingians",
+              "title": "Caroloringiens",
+              "url": "https://fr.wikipedia.org/wiki/Carolingiens",
+              "start_date": "751",
+              "end_date": "987",
+              "children": [
+                {
+                  "title": "Pépin le Bref",
+                  "url": "https://fr.wikipedia.org/wiki/P%C3%A9pin_le_Bref",
+                  "description": "roi des Francs",
+                  "start_date": "751",
+                  "end_date": "768"
+                },
+                {
+                  "title": "Charlemagne",
+                  "url": "https://fr.wikipedia.org/wiki/Charlemagne",
+                  "description": "roi des Francs puis empereur d'Occident",
+                  "start_date": "768",
+                  "end_date": "814"
+                },
+                {
+                  "title": "Louis Ier le Pieux",
+                  "url": "https://fr.wikipedia.org/wiki/Louis_le_Pieux",
+                  "description": "empereur d'Occident",
+                  "start_date": "814",
+                  "end_date": "840"
+                },
+                {
+                  "title": "Charles II le Chauve",
+                  "url": "https://fr.wikipedia.org/wiki/Charles_II_le_Chauve",
+                  "description": "empereur d'Occident",
+                  "start_date": "840",
+                  "end_date": "877"
+                }
+              ]
+            },
+            {
+              "id": "france-kings-capetians",
+              "title": "Capétiens",
+              "url": "https://fr.wikipedia.org/wiki/Cap%C3%A9tiens",
+              "start_date": "987",
+              "end_date": "1328",
+              "children": []
+            },
+            {
+              "id": "france-kings-valois",
+              "title": "Valois",
+              "url": "https://fr.wikipedia.org/wiki/Maison_de_Valois",
+              "start_date": "1328",
+              "end_date": "1589",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

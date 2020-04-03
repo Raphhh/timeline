@@ -1,9 +1,20 @@
-function component() {
-    const element = document.createElement('div');
+import Vue from 'vue';
 
-    element.innerHTML = 'yeah!';
+import TimelineComponent from "./components/TimeLine";
+import {TimelineVuePlugin} from "./TimelineVuePlugin";
 
-    return element;
-}
+Vue.use(new TimelineVuePlugin(window)); //todo mettre ça ailleurs.
 
-document.body.appendChild(component());
+
+//todo faire une démo ailleurs.
+
+let v = new Vue({
+    el: '#app',
+    template: `<timeline-component :url="url" />`,
+    data: {
+        url: 'data/middle_age.fr.json'
+    },
+    components: {
+        TimelineComponent
+    }
+});

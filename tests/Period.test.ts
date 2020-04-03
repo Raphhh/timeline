@@ -14,6 +14,7 @@ describe('Period', function() {
         assert.strictEqual(period2.parent, period1);
     });
 
+
     it('startDate is null', function() {
         let period = new Period({});
         assert.isNull(period.startDate);
@@ -21,28 +22,32 @@ describe('Period', function() {
 
     it('startDate is date', function() {
         let period = new Period({start_date: '2000-01-01'});
-        assert.strictEqual(period.startDate.toUTCString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
+        assert.strictEqual(period.startDate.toISOString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
     });
+
+    it('startDate is year', function() {
+        let period = new Period({start_date: '2000'});
+        assert.strictEqual(period.startDate.toISOString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
+    });
+
 
     it('relativeStartDate with empty start_date', function() {
         let period = new Period({});
         assert.isNull(period.relativeStartDate);
     });
 
-    it('relativeStartDate with empty en_date', function() {
+    it('relativeStartDate with own date', function() {
         let period = new Period({start_date: '2000'});
-        assert.isNull(period.relativeStartDate);
+        assert.strictEqual(period.relativeStartDate.toString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
     });
 
-    it('relativeStartDate with own dates', function() {
-        let period = new Period({start_date: '2000'});
-        assert.isNull(period.relativeStartDate);
+
+    it('relativeStartDate with parent date', function() {
+        let period1 = new Period({start_date: '2000'});
+        let period2 = new Period({start_date: '2002'}, period1);
+        assert.strictEqual(period2.relativeStartDate.unix(), 0);
     });
 
-    it('startDate is year', function() {
-        let period = new Period({start_date: '2000', end_date: '2002'});
-        assert.strictEqual(period.relativeStartDate.toUTCString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
-    });
 
     it('endDate is null', function() {
         let period = new Period({});
@@ -51,13 +56,14 @@ describe('Period', function() {
 
     it('endDate is date', function() {
         let period = new Period({end_date: '2000-01-01'});
-        assert.strictEqual(period.endDate.toUTCString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
+        assert.strictEqual(period.endDate.toISOString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
     });
 
     it('endDate is year', function() {
         let period = new Period({end_date: '2000'});
-        assert.strictEqual(period.endDate.toUTCString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
+        assert.strictEqual(period.endDate.toISOString(), 'Sat, 01 Jan 2000 00:00:00 GMT');
     });
+
 
     it('children is not set and empty', function() {
         let period = new Period({});

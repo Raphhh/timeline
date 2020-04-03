@@ -1,4 +1,6 @@
 import { PeriodJsonInterface } from './PeriodJsonInterface';
+import { Date } from './Date';
+import {Duration} from "./Duration";
 
 export class Period {
 
@@ -9,6 +11,10 @@ export class Period {
     constructor(data: PeriodJsonInterface, parent: Period = null) {
         this.data = data;
         this.parent = parent;
+    }
+
+    get id(): string {
+        return this.data.id || '';
     }
 
     get title(): string {
@@ -22,18 +28,22 @@ export class Period {
         return null;
     }
 
-    get relativeStartDate(): Date|null {
+    get relativeStartDate(): Duration|null {
 
         if (!this.parent) {
-            return new Date(0);
+            return new Duration(0);
         }
 
         if (!this.startDate) {
             return this.parent.relativeStartDate;
         }
 
-        if (this.parent.relativeStartDate) {
-            return new Date(this.parent.relativeStartDate.getUTCMilliseconds() - this.startDate.getUTCMilliseconds());
+        let parent: Period|null = this;
+        while (parent = parent.parent) {
+            if (parent.startDate) {
+                console.log('relativeStartDate', this.title, parent.title, this.startDate.unix(), parent.startDate.unix(), this.startDate.unix() - parent.startDate.unix());
+                return new Duration(this.startDate.unix() - parent.startDate.unix());
+            }
         }
 
         return null;
@@ -46,17 +56,17 @@ export class Period {
         return null;
     }
 
-    get duration(): Date|null {
+    get duration(): Duration|null {
+        if (!this.startDate) {
+            return this.parent.duration;
+        }
+
         if (!this.endDate) {
-            return null;
+            return new Duration(0);
         }
 
-        let relativeStartDate: Date|null = this.relativeStartDate;
-        if (!relativeStartDate) {
-            return null;
-        }
-
-        return new Date(this.endDate.getUTCMilliseconds() - relativeStartDate.getUTCMilliseconds());
+        console.log('duration', this.title, this.endDate.unix(), this.startDate.unix(), this.endDate.unix() - this.startDate.unix());
+        return new Duration(this.endDate.unix() - this.startDate.unix());
     }
 
     get children(): Period[] {
