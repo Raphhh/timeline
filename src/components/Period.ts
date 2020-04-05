@@ -8,23 +8,7 @@ export default Vue.extend({
             <div class="timeline-period-data">
                 <span v-if="period.title" class="timeline-period-title">{{period.title}}</span>
                 <span v-if="period.startDate" class="timeline-period-dates">
-                    (
-                    <span class="timeline-period-start-date">
-                        {{period.startDate}}    
-                    </span>
-                    <span v-if="period.endDate" class="timeline-period-dates-separator">
-                        -
-                    </span>
-                    <span v-if="period.endDate" class="timeline-period-end-date">
-                        {{period.endDate}}    
-                    </span>
-<!--                    <span v-if="period.relativeStartDate" class="timeline-period-relative-start-date">-->
-<!--                        [{{period.relativeStartDate}}]-->
-<!--                    </span>-->
-<!--                    <span v-if="period.duration" class="timeline-period-duration">-->
-<!--                        ({{period.duration}})-->
-<!--                    </span>-->
-                    )
+                    (<span class="timeline-period-start-date">{{period.startDate}}</span><span v-if="period.endDate" class="timeline-period-dates-separator">-</span><span v-if="period.endDate" class="timeline-period-end-date">{{period.endDate}}</span>)
                 </span>
             </div>
             <ul v-if="period.children.length" class="timeline-period-children">

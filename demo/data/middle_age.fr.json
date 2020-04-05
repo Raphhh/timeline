@@ -76,6 +76,20 @@
       ]
     },
     {
+      "title": "Evènements",
+      "children": [
+        {
+          "title": "Sacre de Charlemagne",
+          "start_date": "800-12-25"
+        },
+        {
+          "title": "Traité de Verdun",
+          "start_date": "843",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Verdun"
+        }
+      ]
+    },
+    {
       "id": "france",
       "title": "France",
       "children": [
@@ -132,7 +146,7 @@
                   "title": "Charles II le Chauve",
                   "url": "https://fr.wikipedia.org/wiki/Charles_II_le_Chauve",
                   "description": "empereur d'Occident",
-                  "start_date": "840",
+                  "start_date": "843",
                   "end_date": "877"
                 }
               ]
@@ -152,6 +166,139 @@
               "start_date": "1328",
               "end_date": "1589",
               "children": []
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "title": "Maires du palais (Neustrie)",
+              "url": "https://fr.wikipedia.org/wiki/Maire_du_palais",
+              "start_date": "604",
+              "end_date": "751",
+              "children": [
+                {
+                  "title": "Charles Martel",
+                  "url": "https://fr.wikipedia.org/wiki/Charles_Martel",
+                  "description": "maire du palais (Neustrie)",
+                  "start_date": "718",
+                  "end_date": "741"
+                },
+                {
+                  "title": "Pépin le Bref",
+                  "url": "https://fr.wikipedia.org/wiki/P%C3%A9pin_le_Bref",
+                  "description": "maire du palais (Neustrie)",
+                  "start_date": "741",
+                  "end_date": "751"
+                }
+              ]
+            },
+            {
+              "title": "Invasions viking",
+              "url": "https://fr.wikipedia.org/wiki/Chronologie_des_invasions_vikings",
+              "start_date": "799",
+              "end_date": "911",
+              "children": [
+                {
+                  "title": "Siège de Paris",
+                  "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Paris_%28885-887%29",
+                  "start_date": "885",
+                  "end_date": "887"
+                },
+                {
+                  "title": "Duché de Normandie",
+                  "description": "Charles III le simple confie la Normandie au chef viking Rollon",
+                  "url": "https://fr.wikipedia.org/wiki/Duch%C3%A9_de_Normandie",
+                  "start_date": "911"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bourgogne",
+      "title": "Bourgogne",
+      "children": [
+        {
+          "title": "Rois (dates des règnes)",
+          "children": [
+            {
+              "title": "Lothaire Ier",
+              "description": "Roi de Francie médiane",
+              "url": "https://fr.wikipedia.org/wiki/Lothaire_Ier",
+              "start_date": "843",
+              "end_date": "855"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "germanie",
+      "title": "Germanie",
+      "children": [
+        {
+          "title": "Rois (dates des règnes)",
+          "url": "https://fr.wikipedia.org/wiki/Liste_des_souverains_d%27Allemagne",
+          "children": [
+            {
+              "title": "Carolingiens",
+              "start_date": "843",
+              "end_date": "911",
+              "children": [
+                {
+                  "title": "Louis II de Germanie",
+                  "description": "Roi de Francie médiane",
+                  "url": "https://fr.wikipedia.org/wiki/Louis_II_de_Germanie",
+                  "start_date": "843",
+                  "end_date": "876"
+                }
+              ]
+            },
+            {
+              "title": "Ottoniens",
+              "url": "https://fr.wikipedia.org/wiki/Ottoniens",
+              "start_date": "919",
+              "end_date": "1024",
+              "children": [
+                {
+                  "title": "Henri Ier de Germanie",
+                  "description": "Roi de Francie médiane",
+                  "url": "https://fr.wikipedia.org/wiki/Henri_Ier_de_Germanie",
+                  "start_date": "936",
+                  "end_date": "973"
+                },
+                {
+                  "title": "Otton Ier",
+                  "description": "Roi de Francie médiane et empereur",
+                  "url": "https://fr.wikipedia.org/wiki/Otton_Ier_(empereur_du_Saint-Empire)",
+                  "start_date": "936",
+                  "end_date": "973"
+                },
+                {
+                  "title": "Otton II",
+                  "description": "Empereur du SERG",
+                  "url": "https://fr.wikipedia.org/wiki/Otton_II_(empereur_du_Saint-Empire)",
+                  "start_date": "967",
+                  "end_date": "983"
+                },
+                {
+                  "title": "Otton III",
+                  "description": "Empereur du SERG",
+                  "url": "https://fr.wikipedia.org/wiki/Otton_III_(empereur_du_Saint-Empire)",
+                  "start_date": "983",
+                  "end_date": "1002"
+                },
+                {
+                  "title": "Henri II",
+                  "description": "Empereur du SERG",
+                  "url": "https://fr.wikipedia.org/wiki/Henri_II_(empereur_du_Saint-Empire)",
+                  "start_date": "1002",
+                  "end_date": "1024"
+                }
+              ]
             }
           ]
         }
