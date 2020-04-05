@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import {PeriodCss} from "../PeriodCss";
 
 export default Vue.extend({
     name: 'period-component',
@@ -40,12 +41,8 @@ export default Vue.extend({
             }
         },
         periodStyle: function() {
-            let scale: number = 0.0000001;
-            console.log('=====', this.period.title, this.period.relativeStartDate ? (this.period.relativeStartDate.unix * scale) : 0);
-            return {
-                'left': this.period.relativeStartDate ? ((this.period.relativeStartDate.unix * scale) + 'px'): 0,
-                'width': this.period.duration ? ((this.period.duration.unix * scale) + 'px') : 'inherit',
-            }
+            let css = new PeriodCss(this.period);
+            return css.buildStyle();
         }
     }
 });
