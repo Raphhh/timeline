@@ -3,7 +3,8 @@ import Vue from 'vue';
 import TimelineComponent from "./components/TimeLine";
 import {TimelineVuePlugin} from "./TimelineVuePlugin";
 
-Vue.use(new TimelineVuePlugin(window)); //todo mettre ça ailleurs.
+
+TimelineVuePlugin.init(Vue); //todo mettre ça ailleurs.
 
 
 //todo faire une démo ailleurs.
