@@ -234,11 +234,11 @@
       ]
     },
     {
-      "id": "germanie",
+      "id": "germany",
       "title": "Germanie",
       "children": [
         {
-          "id": "germanie-kings",
+          "id": "germany-kings",
           "url": "https://fr.wikipedia.org/wiki/Liste_des_souverains_d%27Allemagne",
           "children": [
             {
