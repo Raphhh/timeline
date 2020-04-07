@@ -26,16 +26,17 @@ export class TimelineVuePlugin implements PluginObject<Options> {
     }
 
     get install(): PluginFunction<Options> {
-        let that: TimelineVuePlugin = this;
-        return function (Vue, options?) {
-            that.options = options || {};
-            that.timeline = new Timeline(
-                that.options.timeline || {},
-                that.windowOrWorkerGlobalScope
-            );
-            Vue.prototype.$timelinePlugin = that;
-        };
+        return this.init;
     };
+
+    init(Vue: VueConstructor, options?: Options) {
+        Vue.prototype.$timelinePlugin = this;
+        this.options = options || {};
+        this.timeline = new Timeline(
+            this.options.timeline || {},
+            this.windowOrWorkerGlobalScope
+        );
+    }
 
     requestPeriod(input: RequestInfo): Promise<Period> {
         return this.timeline.periodApi.request(input, this.options.api);

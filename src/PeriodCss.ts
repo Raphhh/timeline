@@ -9,7 +9,7 @@ export class PeriodCss implements PeriodCssInterface {
     public options: PeriodCssOptionsInterface;
     private readonly period: Period;
 
-    constructor(period: Period, scale: number = 0.0000001, options: PeriodCssOptionsInterface = {}) {
+    constructor(period: Period, scale: number, options: PeriodCssOptionsInterface) {
         this.period = period;
         this.scale = scale;
         this.options = options;

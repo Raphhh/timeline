@@ -8,7 +8,7 @@ export class PeriodCssFactory {
     private readonly scale: number;
     private readonly options: PeriodCssOptionsInterface;
 
-    constructor(scale: number = 0.0000001, options: PeriodCssOptionsInterface) {
+    constructor(scale: number = 0.0000001, options: PeriodCssOptionsInterface = {}) {
         this.scale = scale;
         this.options = options;
     }

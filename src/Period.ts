@@ -5,8 +5,8 @@ import {PeriodCss} from "./PeriodCss";
 
 export class Period {
 
-    public readonly parent: Period|null;
     public periodCss: PeriodCss|null;
+    public readonly parent: Period|null;
     private readonly data: PeriodJsonInterface;
     private _children: Period[];
     private _relativeStartDate: Duration|null;
