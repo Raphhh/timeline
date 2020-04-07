@@ -91,7 +91,7 @@ export class PeriodCss implements PeriodCssInterface {
                 return top;
             }
             let brotherCss: PeriodCss = this.buildPeriodCss(brothers[i]);
-            top = brotherCss.top + brotherCss.height + 2; //todo 2 pour compter les border et les margin aussi.
+            top = brotherCss.top + brotherCss.height ; //todo compter les border et les margin aussi.
         }
         throw new Error('instance not found in the children of the parent');
     }

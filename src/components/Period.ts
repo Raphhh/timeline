@@ -22,6 +22,7 @@ export default Vue.extend({
             return {
                 'timeline-period-without-child': !this.period.children.length,
                 'timeline-period-with-relative-start-date': this.period.relativeStartDate && this.period.relativeStartDate.unix,
+                'timeline-period-without-title': !this.period.title,
             }
         },
         periodStyle: function() {

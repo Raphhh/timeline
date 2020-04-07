@@ -14,16 +14,32 @@
         .timeline {
             margin: 0 50px;
         }
-        .timeline-period {
-            border: 1px lightgrey solid;
-            margin: 2px;
-        }
+
         .timeline ul {
             padding-left: 0;
             list-style: none;
         }
+        .timeline-period {
+            /*border: 1px lightgrey solid;*/
+            /*margin: 2px;*/
+
+        }
+        .timeline>ul>li {
+            border: 1px lightgrey solid;
+        }
+        .timeline>ul>li>ul>li {
+            border-top: 1px lightgrey solid;
+        }
+        .timeline-period-with-relative-start-date {
+            border: 1px lightgrey solid;
+            background-color: white;
+        }
         .timeline-period-without-child {
             font-size: 11px;
+        }
+        .timeline-period-without-title {
+            border: none;
+            margin: 0;
         }
 
         .timeline ul {

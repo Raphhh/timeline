@@ -76,7 +76,6 @@
       ]
     },
     {
-      "title": "Evènements",
       "children": [
         {
           "title": "Sacre de Charlemagne",
@@ -95,7 +94,6 @@
       "children": [
         {
           "id": "france-kings",
-          "title": "Rois (dates des règnes)",
           "url": "https://fr.wikipedia.org/wiki/Liste_des_monarques_de_France",
           "children": [
             {
@@ -222,7 +220,7 @@
       "title": "Bourgogne",
       "children": [
         {
-          "title": "Rois (dates des règnes)",
+          "id": "bourgogne-kings",
           "children": [
             {
               "title": "Lothaire Ier",
@@ -240,7 +238,7 @@
       "title": "Germanie",
       "children": [
         {
-          "title": "Rois (dates des règnes)",
+          "id": "germanie-kings",
           "url": "https://fr.wikipedia.org/wiki/Liste_des_souverains_d%27Allemagne",
           "children": [
             {
