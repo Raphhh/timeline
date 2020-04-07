@@ -7,6 +7,8 @@ export class Period {
     public readonly parent: Period|null;
     private readonly data: PeriodJsonInterface;
     private _children: Period[];
+    private _relativeStartDate: Duration|null;
+    private _duration: Duration|null;
 
     constructor(data: PeriodJsonInterface, parent: Period = null) {
         this.data = data;
@@ -29,24 +31,10 @@ export class Period {
     }
 
     get relativeStartDate(): Duration|null {
-
-        if (!this.parent) {
-            return new Duration(0);
+        if (this._relativeStartDate === undefined) {
+            this._relativeStartDate = this.buildRelativeStartDate();
         }
-
-        if (!this.startDate) {
-            return this.parent.relativeStartDate;
-        }
-
-        let parent: Period|null = this;
-        while (parent = parent.parent) {
-            if (parent.startDate) {
-                console.log('relativeStartDate', this.title, parent.title, this.startDate.unix(), parent.startDate.unix(), this.startDate.unix() - parent.startDate.unix());
-                return new Duration(this.startDate.unix() - parent.startDate.unix());
-            }
-        }
-
-        return null;
+        return this._relativeStartDate;
     }
 
     get endDate(): Date|null {
@@ -57,20 +45,14 @@ export class Period {
     }
 
     get duration(): Duration|null {
-        if (!this.startDate) {
-            return this.parent.duration;
+        if (this._duration === undefined) {
+            this._duration = this.buildDuration();
         }
-
-        if (!this.endDate) {
-            return new Duration(0);
-        }
-
-        console.log('duration', this.title, this.endDate.unix(), this.startDate.unix(), this.endDate.unix() - this.startDate.unix());
-        return new Duration(this.endDate.unix() - this.startDate.unix());
+        return this._duration;
     }
 
     get children(): Period[] {
-        if (!this._children) {
+        if (this._children === undefined) {
             this._children = this.buildChildren();
         }
         return this._children;
@@ -88,5 +70,36 @@ export class Period {
         }
 
         return result;
+    }
+
+    private buildRelativeStartDate(): Duration|null {
+        if (!this.parent) {
+            return new Duration(0);
+        }
+
+        if (!this.startDate) {
+            return this.parent.relativeStartDate;
+        }
+
+        let parent: Period|null = this;
+        while (parent = parent.parent) {
+            if (parent.startDate) {
+                return new Duration(this.startDate.unix() - parent.startDate.unix());
+            }
+        }
+
+        return null;
+    }
+
+    buildDuration(): Duration|null {
+        if (!this.startDate) {
+            return this.parent.duration;
+        }
+
+        if (!this.endDate) {
+            return new Duration(0);
+        }
+
+        return new Duration(this.endDate.unix() - this.startDate.unix());
     }
 }
