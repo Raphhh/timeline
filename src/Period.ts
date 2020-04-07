@@ -1,10 +1,12 @@
 import { PeriodJsonInterface } from './PeriodJsonInterface';
 import { Date } from './Date';
 import {Duration} from "./Duration";
+import {PeriodCss} from "./PeriodCss";
 
 export class Period {
 
     public readonly parent: Period|null;
+    public periodCss: PeriodCss|null;
     private readonly data: PeriodJsonInterface;
     private _children: Period[];
     private _relativeStartDate: Duration|null;
@@ -13,6 +15,7 @@ export class Period {
     constructor(data: PeriodJsonInterface, parent: Period = null) {
         this.data = data;
         this.parent = parent;
+        this.periodCss = null;
     }
 
     get id(): string {

@@ -25,8 +25,7 @@ export default Vue.extend({
             }
         },
         periodStyle: function() {
-            let css = new PeriodCss(this.period);
-            return css.buildStyle();
+            return this.$timelinePlugin.buildStyleForPeriod(this.period);
         }
     }
 });

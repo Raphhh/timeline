@@ -1,20 +1,15 @@
 import {Period} from "./Period";
+import {PeriodCssInterface} from "./PeriodCssInterface";
+import {PeriodCssOptionsInterface} from "./PeriodCssOptionsInterface";
 
-interface PeriodCssInterface {
-    height?: number
-}
 
-export class PeriodCss {
+export class PeriodCss implements PeriodCssInterface {
 
+    public scale: number;
+    public options: PeriodCssOptionsInterface;
     private readonly period: Period;
-    private readonly scale: number;
-    private readonly options: PeriodCssInterface;
-    private _top: number;
-    private _left: number;
-    private _height: number;
-    private _width: number;
 
-    constructor(period: Period, scale: number = 0.0000001, options: PeriodCssInterface = {}) {
+    constructor(period: Period, scale: number = 0.0000001, options: PeriodCssOptionsInterface = {}) {
         this.period = period;
         this.scale = scale;
         this.options = options;
@@ -30,38 +25,6 @@ export class PeriodCss {
     }
 
     get width(): number {
-        if (this._width === undefined) {
-            this._width = this.buildWidth();
-        }
-        return this._width;
-    }
-
-    get height(): number {
-        if (this._height === undefined) {
-            this._height = this.buildHeight();
-        }
-        return this._height;
-    }
-
-    get left(): number {
-        if (this._left === undefined) {
-            this._left = this.buildLeft();
-        }
-        return this._left;
-    }
-
-    get top(): number {
-        if (this._top === undefined) {
-            this._top = this.buildTop();
-        }
-        return this._top;
-    }
-
-    private buildPeriodCss(period: Period): PeriodCss {
-        return new PeriodCss(period, this.scale, this.options);
-    }
-
-    private buildWidth(): number {
         if (this.period.duration) {
             //todo ici on a un problème pour gérer les margin et les border quand la duration est celle du parent.
             return this.period.duration.unix * this.scale;
@@ -69,7 +32,7 @@ export class PeriodCss {
         return 0;
     }
 
-    private buildHeight(): number {
+    get height(): number {
         let defaultMinHeight: number = 60;
         let defaultTitleHeight: number = 30;
 
@@ -102,15 +65,15 @@ export class PeriodCss {
         // }
         // throw new Error('instance not found in the children of the parent');
     }
-
-    private buildLeft(): number {
+    
+    get left(): number {
         if (this.period.relativeStartDate) {
             return this.period.relativeStartDate.unix * this.scale;
         }
         return 0;
     }
-
-    private buildTop(): number {
+    
+    get top(): number {
         let top: number = 0;
 
         if (!this.period.parent) {
@@ -131,5 +94,9 @@ export class PeriodCss {
             top = brotherCss.top + brotherCss.height + 2; //todo 2 pour compter les border et les margin aussi.
         }
         throw new Error('instance not found in the children of the parent');
+    }
+
+    private buildPeriodCss(period: Period): PeriodCss {
+        return new PeriodCss(period, this.scale, this.options);
     }
 }

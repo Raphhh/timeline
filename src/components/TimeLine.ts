@@ -18,7 +18,7 @@ export default Vue.extend({
         }
     },
     created() {
-        this.$periodApi.request(this.url, this.$timelineOptions.api).then((period: Period) => {
+        this.$timelinePlugin.requestPeriod(this.url).then((period: Period) => {
             this.period = period;
         });
     },
