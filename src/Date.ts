@@ -30,6 +30,18 @@ export class Date {
         this.moment = moment(formatValue(value));
     }
 
+    get year(): string {
+        return this.moment.format('YYYY');
+    }
+
+    get month(): string {
+        return this.moment.format('MM');
+    }
+
+    get day(): string {
+        return this.moment.format('DD');
+    }
+
     toString(): string {
         return this.value;
     }

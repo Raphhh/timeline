@@ -95,6 +95,7 @@ export class Period {
             }
         }
 
+        //todo ici c'est que le noeud root n'a aucune date... mhhh peut-être thrower une exception?
         return null;
     }
 

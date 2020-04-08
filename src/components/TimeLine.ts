@@ -1,12 +1,14 @@
 import Vue from 'vue';
 import {Period} from "../Period";
 import PeriodComponent from "./Period";
+import ScaleComponent from "./Scale";
 
 export default Vue.extend({
     name: 'timeline-component',
     template: `
         <div class="timeline">
-            <ul v-if="period" class="list-unstyled">
+            <scale-component v-if="period" :period="period" />
+            <ul v-if="period">
                 <period-component :period="period" />
             </ul>
         </div>
@@ -23,6 +25,7 @@ export default Vue.extend({
         });
     },
     components: {
-        PeriodComponent
+        PeriodComponent,
+        ScaleComponent,
     }
 });
