@@ -84,7 +84,7 @@
         {
           "title": "Traité de Verdun",
           "start_date": "843",
-          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Verdun"
+          "url": "https://fr.wikipedia.org/wiki/Traité_de_Verdun"
         }
       ]
     },
@@ -99,7 +99,7 @@
             {
               "id": "france-kings-merovingians",
               "title": "Mérovingiens",
-              "url": "https://fr.wikipedia.org/wiki/M%C3%A9rovingiens",
+              "url": "https://fr.wikipedia.org/wiki/Mérovingiens",
               "start_date": "457",
               "end_date": "751",
               "children": [
@@ -121,7 +121,7 @@
               "children": [
                 {
                   "title": "Pépin le Bref",
-                  "url": "https://fr.wikipedia.org/wiki/P%C3%A9pin_le_Bref",
+                  "url": "https://fr.wikipedia.org/wiki/Pépin_le_Bref",
                   "description": "roi des Francs",
                   "start_date": "751",
                   "end_date": "768"
@@ -152,7 +152,7 @@
             {
               "id": "france-kings-capetians",
               "title": "Capétiens",
-              "url": "https://fr.wikipedia.org/wiki/Cap%C3%A9tiens",
+              "url": "https://fr.wikipedia.org/wiki/Capétiens",
               "start_date": "987",
               "end_date": "1328",
               "children": []
@@ -184,7 +184,7 @@
                 },
                 {
                   "title": "Pépin le Bref",
-                  "url": "https://fr.wikipedia.org/wiki/P%C3%A9pin_le_Bref",
+                  "url": "https://fr.wikipedia.org/wiki/Pépin_le_Bref",
                   "description": "maire du palais (Neustrie)",
                   "start_date": "741",
                   "end_date": "751"
@@ -199,14 +199,14 @@
               "children": [
                 {
                   "title": "Siège de Paris",
-                  "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Paris_%28885-887%29",
+                  "url": "https://fr.wikipedia.org/wiki/Siège_de_Paris_(885-887)",
                   "start_date": "885",
                   "end_date": "887"
                 },
                 {
                   "title": "Duché de Normandie",
                   "description": "Charles III le simple confie la Normandie au chef viking Rollon",
-                  "url": "https://fr.wikipedia.org/wiki/Duch%C3%A9_de_Normandie",
+                  "url": "https://fr.wikipedia.org/wiki/Duché_de_Normandie",
                   "start_date": "911"
                 }
               ]

@@ -18,12 +18,16 @@ export class Period {
         this.periodCss = null;
     }
 
-    get id(): string {
-        return this.data.id || '';
+    get id(): string|null {
+        return this.data.id || null;
     }
 
-    get title(): string {
-        return this.data.title || '';
+    get url(): string|null {
+        return this.data.url || null;
+    }
+
+    get title(): string|null {
+        return this.data.title || null;
     }
 
     get startDate(): Date|null {

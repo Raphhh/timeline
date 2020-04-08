@@ -4,7 +4,12 @@ import {PeriodCss} from "../PeriodCss";
 export default Vue.extend({
     name: 'period-component',
     template: `
-        <li class="timeline-period" v-bind:id="period.id" v-bind:class="periodClass" v-bind:style="periodStyle">
+        <li class="timeline-period" 
+            v-bind:id="period.id"
+            v-bind:class="periodClass"
+            v-bind:style="periodStyle"
+            v-bind:data-url="period.url" 
+        >
             <div class="timeline-period-data">
                 <span v-if="period.title" class="timeline-period-title">{{period.title}}</span>
                 <span v-if="period.startDate" class="timeline-period-dates">
