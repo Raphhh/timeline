@@ -2,10 +2,10 @@
   "id": "middle-age",
   "title": "Moyen Age",
   "start_date": "476",
-  "end_date": "1453",
+  "end_date": "1492",
   "children": [
     {
-      "id": "events",
+      "id": "global-events",
       "children": [
         {
           "title": "Sacre de Charlemagne",
@@ -27,9 +27,20 @@
           "url": "https://fr.wikipedia.org/wiki/S%C3%A9paration_des_%C3%89glises_d'Orient_et_d'Occident"
         },
         {
-          "title": "Concordat de Worms",
-          "start_date": "1122",
-          "url": "https://fr.wikipedia.org/wiki/Concordat_de_Worms"
+          "title": "Peste noire",
+          "url": "https://fr.wikipedia.org/wiki/Peste_noire",
+          "start_date": "1346",
+          "end_date": "1353"
+        },
+        {
+          "title": "Grande Jacquerie",
+          "url": "https://fr.wikipedia.org/wiki/Grande_Jacquerie",
+          "start_date": "1358"
+        },
+        {
+          "title": "Bible de Gutenberg",
+          "url": "https://fr.wikipedia.org/wiki/Bible_de_Gutenberg",
+          "start_date": "1455"
         }
       ]
     },
@@ -95,12 +106,30 @@
               ]
             },
             {
-              "id": "france-kings-capetians",
-              "title": "Capétiens",
-              "url": "https://fr.wikipedia.org/wiki/Capétiens",
+              "title": "Capétiens directs",
+              "url": "https://fr.wikipedia.org/wiki/Cap%C3%A9tiens_directs",
               "start_date": "987",
               "end_date": "1328",
-              "children": []
+              "children": [
+                {
+                  "title": "Philippe II Auguste",
+                  "url": "https://fr.wikipedia.org/wiki/Philippe_II_Auguste",
+                  "start_date": "1180",
+                  "end_date": "1223"
+                },
+                {
+                  "title": "Louis IX (Saint Louis)",
+                  "url": "https://fr.wikipedia.org/wiki/Louis_IX",
+                  "start_date": "1226",
+                  "end_date": "1270"
+                },
+                {
+                  "title": "Philippe IV le Bel",
+                  "url": "https://fr.wikipedia.org/wiki/Philippe_IV_le_Bel",
+                  "start_date": "1285",
+                  "end_date": "1314"
+                }
+              ]
             },
             {
               "id": "france-kings-valois",
@@ -108,33 +137,101 @@
               "url": "https://fr.wikipedia.org/wiki/Maison_de_Valois",
               "start_date": "1328",
               "end_date": "1589",
-              "children": []
+              "children": [
+                {
+                  "title": "Jean II le Bon",
+                  "url": "https://fr.wikipedia.org/wiki/Jean_II_le_Bon",
+                  "start_date": "1350",
+                  "end_date": "1364"
+                },
+                {
+                  "title": "Charles VI le Fou",
+                  "url": "https://fr.wikipedia.org/wiki/Charles_VI_(roi_de_France)",
+                  "start_date": "1380",
+                  "end_date": "1422"
+                },
+                {
+                  "title": "Charles VII",
+                  "url": "https://fr.wikipedia.org/wiki/Charles_VII_(roi_de_France)",
+                  "start_date": "1422",
+                  "end_date": "1461"
+                }
+              ]
             }
           ]
         },
         {
+          "title": "Maires du palais (Neustrie)",
+          "url": "https://fr.wikipedia.org/wiki/Maire_du_palais",
+          "start_date": "604",
+          "end_date": "751",
           "children": [
             {
-              "title": "Maires du palais (Neustrie)",
-              "url": "https://fr.wikipedia.org/wiki/Maire_du_palais",
-              "start_date": "604",
-              "end_date": "751",
+              "title": "Charles Martel",
+              "url": "https://fr.wikipedia.org/wiki/Charles_Martel",
+              "description": "maire du palais (Neustrie)",
+              "start_date": "718",
+              "end_date": "741"
+            },
+            {
+              "title": "Pépin le Bref",
+              "url": "https://fr.wikipedia.org/wiki/Pépin_le_Bref",
+              "description": "maire du palais (Neustrie)",
+              "start_date": "741",
+              "end_date": "751"
+            }
+          ]
+        },
+        {
+          "title": "État bourguignon",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89tat_bourguignon",
+          "start_date": "1384",
+          "end_date": "1581",
+          "children": [
+            {
+              "id": "bourgogne-ducs",
               "children": [
                 {
-                  "title": "Charles Martel",
-                  "url": "https://fr.wikipedia.org/wiki/Charles_Martel",
-                  "description": "maire du palais (Neustrie)",
-                  "start_date": "718",
-                  "end_date": "741"
+                  "title": "Philippe II le Hardi",
+                  "url": "https://fr.wikipedia.org/wiki/Philippe_II_de_Bourgogne",
+                  "start_date": "1360",
+                  "end_date": "1404"
                 },
                 {
-                  "title": "Pépin le Bref",
-                  "url": "https://fr.wikipedia.org/wiki/Pépin_le_Bref",
-                  "description": "maire du palais (Neustrie)",
-                  "start_date": "741",
-                  "end_date": "751"
+                  "title": "Jean Ier sans Peur",
+                  "url": "https://fr.wikipedia.org/wiki/Jean_Ier_de_Bourgogne",
+                  "start_date": "1404",
+                  "end_date": "1419"
+                },
+                {
+                  "title": "Philippe le Bon",
+                  "url": "https://fr.wikipedia.org/wiki/Philippe_le_Bon",
+                  "start_date": "1419",
+                  "end_date": "1467"
+                },
+                {
+                  "title": "Charles le Téméraire",
+                  "url": "https://fr.wikipedia.org/wiki/Charles_le_T%C3%A9m%C3%A9raire",
+                  "start_date": "1467",
+                  "end_date": "1477"
                 }
               ]
+            },
+            {
+              "title": "Guerre civile entre Armagnacs et Bourguignons",
+              "url": "https://fr.wikipedia.org/wiki/Guerre_civile_entre_Armagnacs_et_Bourguignons",
+              "start_date": "1407",
+              "end_date": "1435"
+            }
+          ]
+        },
+        {
+          "id": "france-events",
+          "children": [
+            {
+              "title": "Bataille de Poitiers",
+              "url": "https://fr.wikipedia.org/wiki/Bataille_de_Poitiers_%28732%29",
+              "start_date": "732"
             },
             {
               "title": "Invasions viking",
@@ -155,24 +252,51 @@
                   "start_date": "911"
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "bourgogne",
-      "title": "Bourgogne",
-      "children": [
-        {
-          "id": "bourgogne-kings",
-          "children": [
+            },
             {
-              "title": "Lothaire Ier",
-              "description": "Roi de Francie médiane",
-              "url": "https://fr.wikipedia.org/wiki/Lothaire_Ier",
-              "start_date": "843",
-              "end_date": "855"
+              "title": "Croisade des albigeois",
+              "url": "https://fr.wikipedia.org/wiki/Croisade_des_albigeois",
+              "start_date": "1226",
+              "end_date": "1254"
+            },
+            {
+              "title": "Guerre de Cent Ans",
+              "url": "https://fr.wikipedia.org/wiki/Guerre_de_Cent_Ans",
+              "start_date": "1337",
+              "end_date": "1453",
+              "children": [
+                {
+                  "title": "Bataille de Crécy",
+                  "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cr%C3%A9cy",
+                  "start_date": "1346"
+                },
+                {
+                  "title": "Bataille de Poitiers",
+                  "url": "https://fr.wikipedia.org/wiki/Bataille_de_Poitiers_%281356%29",
+                  "start_date": "1356"
+                },
+                {
+                  "title": "Bataille d'Azincourt",
+                  "url": "https://fr.wikipedia.org/wiki/Bataille_d%27Azincourt",
+                  "start_date": "1415"
+                },
+                {
+                  "title": "Traité de Troyes",
+                  "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Troyes",
+                  "start_date": "1420"
+                },
+                {
+                  "title": "Siège d'Orléans",
+                  "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_d%27Orl%C3%A9ans_%281428-1429%29",
+                  "start_date": "1428",
+                  "end_date": "1429"
+                },
+                {
+                  "title": "Procès de Jeanne d'Arc",
+                  "url": "https://fr.wikipedia.org/wiki/Jeanne_d%27Arc",
+                  "start_date": "1431"
+                }
+              ]
             }
           ]
         }
@@ -242,13 +366,103 @@
                   "end_date": "1024"
                 }
               ]
+            },
+            {
+              "title": "Franconiens",
+              "start_date": "1024",
+              "end_date": "1125",
+              "children": [
+                {
+                  "title": "Henri IV",
+                  "url": "https://fr.wikipedia.org/wiki/Henri_IV_(empereur_du_Saint-Empire)",
+                  "start_date": "1054",
+                  "end_date": "1087"
+                }
+              ]
+            },
+            {
+              "title": "Hohenstaufen",
+              "url": "https://fr.wikipedia.org/wiki/Maison_de_Hohenstaufen",
+              "start_date": "1138",
+              "end_date": "1254",
+              "children": [
+                {
+                  "title": "Frédéric II",
+                  "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_II_(empereur_du_Saint-Empire)",
+                  "start_date": "1215",
+                  "end_date": "1250"
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
+      "id": "england",
+      "title": "Angleterre",
+      "children": [
+        {
+          "id": "england-kings",
+          "url": "https://fr.wikipedia.org/wiki/Liste_des_monarques_d%27Angleterre",
+          "children": [
+            {
+              "title": "Normands",
+              "start_date": "1066",
+              "end_date": "1154",
+              "children": [
+                {
+                  "title": "Guillaume Ier le Conquérant",
+                  "url": "https://fr.wikipedia.org/wiki/Guillaume_le_Conqu%C3%A9rant",
+                  "start_date": "1066",
+                  "end_date": "1087"
+                }
+              ]
+            },
+            {
+              "title": "Plantagenêt",
+              "url": "https://fr.wikipedia.org/wiki/Maison_Plantagen%C3%AAt",
+              "start_date": "1154",
+              "end_date": "1485",
+              "children": [
+                {
+                  "title": "Richard Cœur de Lion",
+                  "url": "https://fr.wikipedia.org/wiki/Richard_C%C5%93ur_de_Lion",
+                  "start_date": "1189",
+                  "end_date": "1199"
+                },
+                {
+                  "title": "Jean sans Terre",
+                  "url": "https://fr.wikipedia.org/wiki/Jean_sans_Terre",
+                  "start_date": "1199",
+                  "end_date": "1216"
+                },
+                {
+                  "title": "Henri V",
+                  "url": "https://fr.wikipedia.org/wiki/Henri_V_(roi_d%27Angleterre)",
+                  "start_date": "1413",
+                  "end_date": "1422"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bataille d'Hastings",
+          "start_date": "1066",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d%27Hastings"
+        },
+        {
+          "title": "Guerre des Deux-Roses",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_des_Deux-Roses",
+          "start_date": "1455",
+          "end_date": "1485"
+        }
+      ]
+    },
+    {
       "id": "christian",
+      "title": "Papauté",
       "children": [
         {
           "id": "pops",
@@ -271,20 +485,370 @@
               "url": "https://fr.wikipedia.org/wiki/Urbain_II",
               "start_date": "1088",
               "end_date": "1099"
+            },
+            {
+              "title": "Boniface VIII",
+              "url": "https://fr.wikipedia.org/wiki/Boniface_VIII",
+              "start_date": "1295",
+              "end_date": "1303"
             }
           ]
         },
         {
-          "title": "Réforme grégorienne",
-          "url": "https://fr.wikipedia.org/wiki/R%C3%A9forme_gr%C3%A9gorienne",
-          "start_date": "1049",
-          "end_date": "1099"
+          "id": "events",
+          "children": [
+            {
+              "title": "Réforme grégorienne",
+              "url": "https://fr.wikipedia.org/wiki/R%C3%A9forme_gr%C3%A9gorienne",
+              "start_date": "1049",
+              "end_date": "1099"
+            },
+            {
+              "title": "Querelle des Investitures",
+              "url": "https://fr.wikipedia.org/wiki/Querelle_des_Investitures",
+              "start_date": "1075",
+              "end_date": "1122",
+              "children": [
+                {
+                  "title": "Pénitence de Canossa",
+                  "url": "https://fr.wikipedia.org/wiki/P%C3%A9nitence_de_Canossa",
+                  "start_date": "1077"
+                },
+                {
+                  "title": "Concordat de Worms",
+                  "url": "https://fr.wikipedia.org/wiki/Concordat_de_Worms",
+                  "start_date": "1122"
+                }
+              ]
+            },
+            {
+              "title": "Procès de l'ordre du Temple",
+              "url": "https://fr.wikipedia.org/wiki/Proc%C3%A8s_de_l%27ordre_du_Temple",
+              "start_date": "1307",
+              "end_date": "1314"
+            },
+            {
+              "title": "Grand schisme d'Occident",
+              "url": "https://fr.wikipedia.org/wiki/Grand_schisme_d%27Occident",
+              "start_date": "1378",
+              "end_date": "1417"
+            },
+            {
+              "title": "Concile de Constance",
+              "url": "https://fr.wikipedia.org/wiki/Concile_de_Constance",
+              "start_date": "1414",
+              "end_date": "1418"
+            },
+            {
+              "title": "Croisades",
+              "url": "https://fr.wikipedia.org/wiki/Croisades",
+              "start_date": "1095",
+              "end_date": "1291",
+              "children": [
+                {
+                  "children": [
+                    {
+                      "title": "Concile de Clermont",
+                      "url": "https://fr.wikipedia.org/wiki/Concile_de_Clermont_%281095%29",
+                      "start_date": "1095"
+                    },
+                    {
+                      "title": "Sac de Constantinople",
+                      "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Constantinople_%281204%29",
+                      "start_date": "1204"
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "title": "1ère croisade",
+                      "url": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_croisade",
+                      "start_date": "1096",
+                      "end_date": "1099"
+                    },
+                    {
+                      "title": "2ème croisade",
+                      "url": "https://fr.wikipedia.org/wiki/Deuxi%C3%A8me_croisade",
+                      "start_date": "1147",
+                      "end_date": "1149"
+                    },
+                    {
+                      "title": "3ème croisade",
+                      "url": "https://fr.wikipedia.org/wiki/Troisi%C3%A8me_croisade",
+                      "start_date": "1189",
+                      "end_date": "1192"
+                    },
+                    {
+                      "title": "4ème croisade",
+                      "url": "https://fr.wikipedia.org/wiki/Quatri%C3%A8me_croisade",
+                      "start_date": "1202",
+                      "end_date": "1204"
+                    },
+                    {
+                      "title": "5ème croisade",
+                      "url": "https://fr.wikipedia.org/wiki/Cinqui%C3%A8me_croisade",
+                      "start_date": "1217",
+                      "end_date": "1219"
+                    },
+                    {
+                      "title": "6ème croisade",
+                      "url": "https://fr.wikipedia.org/wiki/Sixi%C3%A8me_croisade",
+                      "start_date": "1228",
+                      "end_date": "1229"
+                    },
+                    {
+                      "title": "7ème croisade",
+                      "url": "https://fr.wikipedia.org/wiki/Septi%C3%A8me_croisade",
+                      "start_date": "1248",
+                      "end_date": "1254"
+                    },
+                    {
+                      "title": "8ème croisade",
+                      "url": "https://fr.wikipedia.org/wiki/Huiti%C3%A8me_croisade",
+                      "start_date": "1270",
+                      "end_date": "1270"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
-          "title": "Querelle des Investitures",
-          "url": "https://fr.wikipedia.org/wiki/Querelle_des_Investitures",
-          "start_date": "1075",
-          "end_date": "1122"
+          "id": "orders",
+          "children": [
+            {
+              "title": "Cluny",
+              "start_date": "909"
+            },
+            {
+              "title": "Citeaux",
+              "start_date": "1098"
+            },
+            {
+              "title": "Premontrés",
+              "start_date": "1120"
+            },
+            {
+              "title": "Ordre franciscain",
+              "start_date": "1210"
+            },
+            {
+              "title": "Ordre dominicain",
+              "start_date": "1210"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arts",
+      "title": "Arts",
+      "url": "https://fr.wikipedia.org/wiki/Art_m%C3%A9di%C3%A9val",
+      "children": [
+        {
+          "title": "Art carolingien",
+          "url": "https://fr.wikipedia.org/wiki/Art_carolingien",
+          "start_date": "750",
+          "end_date": "950"
+        },
+        {
+          "title": "Art ottonien",
+          "url": "https://fr.wikipedia.org/wiki/Art_ottonien",
+          "start_date": "950",
+          "end_date": "1020"
+        },
+        {
+          "title": "Art roman",
+          "url": "https://fr.wikipedia.org/wiki/Art_roman",
+          "start_date": "1000",
+          "end_date": "1200"
+        },
+        {
+          "title": "Art gothique",
+          "url": "https://fr.wikipedia.org/wiki/Art_gothique",
+          "start_date": "1130",
+          "end_date": "1495",
+          "children": [
+            {
+              "title": "Gothique primitif",
+              "start_date": "1130",
+              "end_date": "1180"
+            },
+            {
+              "title": "Gothique classique",
+              "start_date": "1180",
+              "end_date": "1230"
+            },
+            {
+              "title": "Gothique rayonnant",
+              "start_date": "1230",
+              "end_date": "1380"
+            },
+            {
+              "title": "Gothique international",
+              "url": "https://fr.wikipedia.org/wiki/Gothique_international",
+              "start_date": "1380",
+              "end_date": "1420"
+            },
+            {
+              "title": "Gothique flamboyant",
+              "start_date": "1420",
+              "end_date": "1495"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "children": [
+        {
+          "children": [
+            {
+              "title": "Boèce",
+              "url": "https://fr.wikipedia.org/wiki/Bo%C3%A8ce",
+              "start_date": "480",
+              "end_date": "524"
+            },
+            {
+              "title": "Benoît de Nursie (Saint Benoît)",
+              "url": "https://fr.wikipedia.org/wiki/Beno%C3%AEt_de_Nursie",
+              "start_date": "480",
+              "end_date": "547"
+            },
+            {
+              "title": "Grégoire de Tours",
+              "url": "https://fr.wikipedia.org/wiki/Gr%C3%A9goire_de_Tours",
+              "start_date": "538",
+              "end_date": "594"
+            },
+            {
+              "title": "Isidore de Séville",
+              "url": "https://fr.wikipedia.org/wiki/Isidore_de_S%C3%A9ville",
+              "start_date": "560",
+              "end_date": "636"
+            },
+            {
+              "title": "Éloi de Noyon (Saint Élois))",
+              "url": "https://fr.wikipedia.org/wiki/%C3%89loi_de_Noyon",
+              "start_date": "588",
+              "end_date": "660"
+            },
+            {
+              "title": "Alcuin",
+              "url": "https://fr.wikipedia.org/wiki/Alcuin",
+              "start_date": "735",
+              "end_date": "804"
+            },
+            {
+              "title": "Gerbert d'Aurillac (Sylvestre II)",
+              "url": "https://fr.wikipedia.org/wiki/Sylvestre_II",
+              "start_date": "946",
+              "end_date": "1003"
+            },
+            {
+              "title": "Robert de Molesme",
+              "url": "https://fr.wikipedia.org/wiki/Robert_de_Molesme",
+              "start_date": "1029",
+              "end_date": "1111"
+            },
+            {
+              "title": "Pierre Abélard",
+              "url": "https://fr.wikipedia.org/wiki/Pierre_Ab%C3%A9lard",
+              "start_date": "1079",
+              "end_date": "1142"
+            },
+            {
+              "title": "Norbert de Xanten",
+              "url": "https://fr.wikipedia.org/wiki/Norbert_de_Xanten",
+              "start_date": "1080",
+              "end_date": "1134"
+            },
+            {
+              "title": "Bernard de Clairvaux",
+              "url": "https://fr.wikipedia.org/wiki/Bernard_de_Clairvaux",
+              "start_date": "1090",
+              "end_date": "1153"
+            },
+            {
+              "title": "Pierre le Vénérable",
+              "url": "https://fr.wikipedia.org/wiki/Pierre_le_V%C3%A9n%C3%A9rable",
+              "start_date": "1092",
+              "end_date": "1156"
+            },
+            {
+              "title": "Johannes Gutenberg",
+              "url": "https://fr.wikipedia.org/wiki/Johannes_Gutenberg",
+              "start_date": "1400",
+              "end_date": "1468"
+            }
+          ]
+        },
+        {
+          "title": "Littérature",
+          "children": [
+            {
+              "title": "Chrétien de Troyes",
+              "url": "https://fr.wikipedia.org/wiki/Chr%C3%A9tien_de_Troyes",
+              "start_date": "1130",
+              "end_date": "1190"
+            },
+            {
+              "title": "Rutebeuf",
+              "url": "https://fr.wikipedia.org/wiki/Rutebeuf",
+              "start_date": "1230",
+              "end_date": "1285"
+            },
+            {
+              "title": "Christine de Pizan",
+              "url": "https://fr.wikipedia.org/wiki/Christine_de_Pizan",
+              "start_date": "1364",
+              "end_date": "1430"
+            },
+            {
+              "title": "Charles Ier d'Orléans",
+              "url": "https://fr.wikipedia.org/wiki/Charles_Ier_d%27Orl%C3%A9ans",
+              "start_date": "1394",
+              "end_date": "1465"
+            },
+            {
+              "title": "François Villon",
+              "url": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Villon",
+              "start_date": "1431",
+              "end_date": "1463"
+            }
+          ]
+        },
+        {
+          "title": "Explorateurs",
+          "children": [
+            {
+              "title": "Marco Polo",
+              "url": "https://fr.wikipedia.org/wiki/Marco_Polo",
+              "start_date": "1254",
+              "end_date": "1324"
+            },
+            {
+              "title": "Jean de Mandeville",
+              "url": "https://fr.wikipedia.org/wiki/Jean_de_Mandeville",
+              "start_date": "1300",
+              "end_date": "1372"
+            },
+            {
+              "title": "Ibn Battûta",
+              "url": "https://fr.wikipedia.org/wiki/Ibn_Batt%C3%BBta",
+              "start_date": "1304",
+              "end_date": "1368"
+            },
+            {
+              "title": "Christophe Colomb",
+              "url": "https://fr.wikipedia.org/wiki/Christophe_Colomb",
+              "start_date": "1451",
+              "end_date": "1506"
+            }
+          ]
         }
       ]
     }

@@ -40,10 +40,8 @@ export class PeriodCss implements PeriodCssInterface {
     }
 
     get height(): number {
-        let defaultMinHeight: number = 60;
-        let defaultTitleHeight: number = 30;
-
-        let height: number = this.options.height || defaultMinHeight;
+        let defaultTitleHeight: number = this.period.title ? 30 : 10;
+        let height: number = this.options.height || 100;
 
         //inspect children
         for (let i = 0, length = this.period.children.length; i < length; ++i) {

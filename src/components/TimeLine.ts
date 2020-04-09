@@ -8,7 +8,7 @@ export default Vue.extend({
     template: `
         <div class="timeline">
             <scale-component v-if="period" :period="period" />
-            <ul v-if="period">
+            <ul v-if="period" class="timeline-periods">
                 <period-component :period="period" />
             </ul>
         </div>

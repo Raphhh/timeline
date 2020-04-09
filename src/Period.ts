@@ -93,7 +93,7 @@ export class Period {
         }
 
         if (!this.startDate) {
-            return this.parent.relativeStartDate;
+            return new Duration(0);
         }
 
         let parent: Period|null = this;

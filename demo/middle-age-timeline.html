@@ -15,9 +15,8 @@
             margin: 0 50px;
         }
 
-        .timeline-scales {
-            height: 60px;
-            margin: 0;
+        .timeline-periods {
+            /*margin-top: 60px;*/
         }
 
         .timeline ul {
@@ -47,6 +46,28 @@
             border: none;
             margin: 0;
         }
+
+        .timeline-scales {
+            height: 60px;
+            margin: 0;
+            /*position: sticky!important;*/
+            /*top: 0;*/
+            background-color: white;
+            z-index: 999999999999999;
+            /*width: 100%;*/
+            /*border-right: 1px lightgrey solid;*/
+        }
+
+        .timeline-scales li {
+            border: none!important;
+            border-left: 1px lightgrey solid!important;
+            background-color: transparent;
+        }
+
+        .timeline-scales .timeline-period-dates {
+            display: none!important;
+        }
+
 
         .timeline ul {
             position: relative;
