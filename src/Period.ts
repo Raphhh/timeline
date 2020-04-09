@@ -11,6 +11,7 @@ export class Period {
     private _children: Period[];
     private _relativeStartDate: Duration|null;
     private _duration: Duration|null;
+    private _previousBrother: Period|null;
 
     constructor(data: PeriodJsonInterface, parent: Period = null) {
         this.data = data;
@@ -64,6 +65,13 @@ export class Period {
         }
         return this._children;
     }
+    
+    get previousBrother(): Period|null {
+        if (this._previousBrother === undefined) {
+            this._previousBrother = this.buildPreviousBrother();
+        }
+        return this._previousBrother;
+    }
 
     private buildChildren(): Period[] {
         let result: Period[] = [];
@@ -109,5 +117,20 @@ export class Period {
         }
 
         return new Duration(this.endDate.unix() - this.startDate.unix());
+    }
+
+    private buildPreviousBrother(): Period|null {
+        if (!this.parent) {
+            return null;
+        }
+
+        let brother: Period|null = null;
+        for (let i = 0, length = this.parent.children.length; i < length; ++i){
+            if (this.parent.children[i] === this) {
+                break;
+            }
+            brother = this.parent.children[i];
+        }
+        return brother;
     }
 }

@@ -9,6 +9,10 @@ export default Vue.extend({
             v-bind:class="periodClass"
             v-bind:style="periodStyle"
             v-bind:data-url="period.url" 
+            v-bind:data-start-date="periodStartDate" 
+            v-bind:data-end-date="periodEndDate" 
+            v-bind:data-relative-start-date="periodRelativeStartDate" 
+            v-bind:data-duration="periodDuration"
         >
             <div class="timeline-period-data">
                 <span v-if="period.title" class="timeline-period-title">{{period.title}}</span>
@@ -23,6 +27,18 @@ export default Vue.extend({
     `,
     props: ['period'],
     computed: {
+        periodStartDate: function(): number|null {
+            return this.period.startDate ? this.period.startDate.unix() : null;
+        },
+        periodEndDate: function(): number|null {
+            return this.period.endDate ? this.period.endDate.unix() : null;
+        },
+        periodRelativeStartDate: function(): number|null {
+            return this.period.relativeStartDate ? this.period.relativeStartDate.unix : null;
+        },
+        periodDuration: function(): number|null {
+            return this.period.duration ? this.period.duration.unix : null;
+        },
         periodClass: function() {
             return {
                 'timeline-period-without-child': !this.period.children.length,
